@@ -1,0 +1,70 @@
+.container {
+    
+    text-align: center;   
+}
+
+.drop-container{
+    
+    background-color: aliceblue;
+    box-shadow: 0 0 5px;
+    min-height: 570px;
+    position:relative;
+}
+
+.drop-container img{
+    
+   margin: 0 auto;
+   width: 80%;   
+}
+
+.drop-container .source,
+.drop-container .target{
+    
+    width: 200px;
+    height: 540px;
+    margin: 10px;
+    display: inline-block;
+    border: solid 1px #777777;
+    background-color: #FFFFFF;
+    position:absolute;
+    top: 10px;
+}
+
+.drop-container .source{
+    
+    left: 200px;
+}
+
+.drop-container .target{
+    
+    left: 600px;
+}
+
+.price-div{
+    
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    height: 30px;
+    background-color:lightgreen;   
+}
+
+#myCanvas{
+    
+    width: 200px;
+    height: 100px;
+    margin: 20px auto;
+    border: solid 1px #000000;
+    box-shadow: 0 0 5px;    
+}
+
+#myImg{
+    display: none;      
+}
+
+#img1{
+    
+    top:30px;
+    margin: 0 auto;   
+}

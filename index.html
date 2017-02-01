@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Starter Template for Bootstrap 3.3.7</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>body{padding-top:50px;}.starter-template{padding:40px 15px;text-align:center;}</style>
+
+    <!--[if IE]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Introducing the features of Canvas, SVG and Drag and Drop</a>
+            </div>
+        </div>
+    </nav>
+
+    <!--Drag and Drop-->
+    <h3>Example for Drag and Drop</h3>
+    <div class="container drop-container">       
+        <!-- Source div-->
+        <div class="source"
+             ondragover="allowDrop(event)" 
+             onmouseover="allowDrop(event)"
+             ondragleave="dropLeaved(event)"
+             ondrop="drop(event)">
+            
+            <p>Products</p>
+            
+            <img id="img1"          src="http://schoolkart.s3.amazonaws.com/catalog/product/cache/1/thumbnail/256x/9df78eab33525d08d6e5fb8d27136e95/g/j/gjk.jpg" 
+                       draggable="true"
+                       ondragstart="drag(event)"
+                       data-price="12500">
+            <img id="img2" src="http://images.footballfanatics.com/FFImage/thumb.aspx?i=/productImages/_1544000/ff_1544896_xl.jpg&w=256&q=80" 
+                       draggable="true"
+                       ondragstart="drag(event)"
+                       data-price="5250">
+            <img id="img3" src="http://shop.portlandrunningcompany.com/images/product/m/mizuno-outlaw-15%E2%80%9D-short-m-256px-256px.jpg" 
+                       draggable="true"
+                       ondragstart="drag(event)"
+                       data-price="2250">
+            
+            <div class="price-div">0 Ft</div>
+        </div>
+        <!-- Target div-->
+        <div class="target" 
+             ondragover="allowDrop(event)" 
+             onmouseover="allowDrop(event)"
+             ondragleave="dropLeaved(event)"
+             ondrop="drop(event)">
+            
+            <p>Basket</p>
+            <div class="price-div">0 Ft</div>
+        </div>
+      </div>
+    <!--/Dragand Drop-->
+    
+    <!--Canvas-->
+    <h3>Example for Canvas</h3>
+    <div class="container">
+        <img id="myImg" src="img/avatar.png">
+        <canvas id="myCanvas"></canvas>
+    </div>
+    <!--/Canvas-->
+    
+    <!--SVG-->
+    <h3>Example for SVG</h3>
+    <div class="container">
+       <svg>
+        <circle cx=200 cy=50 r=30 stroke="green" stroke-width="4" fill="yellow"></circle>
+       </svg>
+    </div>
+    <!--/SVG-->
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
